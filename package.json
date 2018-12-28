@@ -1,0 +1,42 @@
+{
+  "name": "wangyaruphoto",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "deploy-to-git": "^0.1.5",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-images": "^0.5.19",
+    "react-photo-gallery": "^6.2.2",
+    "react-scripts": "2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "deploy-to-git"
+  },
+  "config": {
+    "deployToGit": {
+      "repository": "https://git.coding.net/hfuuss/wangyaruphoto.git",
+      "branch": "build",
+      "folder": "build",
+      "script": "npm run build",
+      "commit": "Automatic commit text",
+      "user": {
+          "email": "y@front.dog",
+          "name": "y"
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
