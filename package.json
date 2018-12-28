@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "deploy-to-git": "^0.1.5",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-images": "^0.5.19",
@@ -15,7 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "deploy-to-git"
+    "deploy": "node deploy.js"
   },
   "config": {
     "deployToGit": {
