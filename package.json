@@ -22,7 +22,7 @@
       "branch": "master",
       "folder": "build",
       "script": "npm run build",
-      "commit": "Automatic commit text",
+      "commit": "自动部署提交",
       "user": {
           "email": "y@front.dog",
           "name": "y"
