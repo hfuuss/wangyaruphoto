@@ -20,7 +20,7 @@
   "config": {
     "deployToGit": {
       "repository": "https://git.coding.net/hfuuss/wangyaruphoto.git",
-      "branch": "build",
+      "branch": "master",
       "folder": "build",
       "script": "npm run build",
       "commit": "Automatic commit text",
