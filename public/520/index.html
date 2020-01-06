@@ -1,0 +1,108 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<title>如如，我爱你 </title>  
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url("digital-7_mono.ttf"/*tpa=./digital-7_mono.ttf*/) format("truetype");
+		}
+	</style>
+	<link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<audio autoplay="autoplay" height="100" width="100">
+				<source src="renxi.mp3" type="audio/mp3" />
+				<embed height="100" width="100" src="renxi.mp3" />
+			</audio>
+			<div id="code">
+				<span class="comments">如如：</span><br />
+				<span class="space"><span class="comments">我爱你</span></span><br />
+				<span class="space"><span class="comments">我嘴笨，媳妇，好多话可能会说错，你要多多包涵我。老婆。
+					今天不小心又惹你生气啦，我真的不是故意的。
+				</span><br />
+				<span class="space"><span class="comments">
+						请求你原谅我。我花了一晚上调试这个网页，希望你能够感到“小惊喜”。以后我一定会经常给媳妇小惊喜，
+						有事情一定提前告诉媳妇。我知道你吃醋了，我其实是开心的。因为在乎，才会吃醋。
+					</span><br />
+					<span class="space"><span class="comments">
+						老婆，爱你。等你这周五回家，我准备了另外一个小惊喜给你。希望也能给你带来快乐。
+						</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						如如, 这是我们相爱的第
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						永远爱你，一辈子，不分离！<br/>
+						<div class="signature">- 最爱你的人</div>
+
+				</div>
+			</div>
+</div>
+	<div class="bg1">	
+		<div class="main">
+			<footer style="line-height:20px">
+                <div id="copyright">
+                  <p><a href='http://51bbw.cn' target="_blank"></a> 
+                    <a href="http://ymjzy.net" target="_blank"></a>
+                    <a href="" target="_blank"></a></p>
+
+                </div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		console.log(together)
+		together.setFullYear(2019, 00 ,13);
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "提醒您：您的浏览器版本过旧^_^<br/>"+
+				"推荐使用 <a href='http://dlsw.br.baidu.com/ditui/zujian/bdBrowserSetup-5956-ftn_1000061134.exe' target='_blank'>百度浏览器<br/>请先升级您的浏览器，效果很炫哦~~"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+    <audio id="bgmMusic" src="./renxi.mp3" preload="auto" type="audio/mp3" autoplay loop></audio>
+    
+
+
+</body>
+</html>
