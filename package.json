@@ -18,7 +18,7 @@
   },
   "config": {
     "deployToGit": {
-      "repository": "https://git.coding.net/hfuuss/wangyaruphoto.git",
+      "repository": "https://github.com/hfuuss/wangyaruphoto.git",
       "branch": "master",
       "folder": "build",
       "script": "npm run build",
